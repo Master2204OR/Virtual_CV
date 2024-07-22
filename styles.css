@@ -1,10 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    color: white;   
+}
+
+header {
+    background: #0a0a0a;
+    padding: 10px 0;
     text-align: center;
 }
 
-h1 {
-    color: #333;
-    margin-top: 50px;
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
 }
+
+header nav ul li a {
+    /*Styling of navigation bar*/
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 130%;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    /*Colour of text when hovering over navigation bar*/
+    color: #f0a500;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background: url('bulp83-1714138587.jpg') no-repeat center center/cover;
+    position: relative;
+}
+
+
+.hero-content {
+    position: absolute;
+    top: 600px; 
+    width: 100%;
+    text-align: center;
+}
+
+
+.hero-content h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+/* Add keyframes for the animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply the animation to hero-content */
+.hero-content {
+    position: absolute;
+    top: 400px; 
+    width: 100%;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.tech-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.tech-icons i {
+    font-size: 2em;
+    color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.tech-icons i:hover {
+    transform: scale(1.2);
+}
+
+

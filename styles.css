@@ -72,12 +72,13 @@ header nav ul li a:hover {
     height: 170px; /* Adjust the size as needed */
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 20px; /* Increase the margin-bottom to add more space between the image and text */
+    margin-bottom: 200px; /* Increase the margin-bottom to add more space between the image and text */  
 }
+
 
 .hero-content h1 {
     font-size: 4em;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .hero-content p {
@@ -115,7 +116,167 @@ header nav ul li a:hover {
 }
 
 
+/* About section styling */
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Make the about section full height */
+    background: url('about-background.jpg') no-repeat center center;
+    background-size: cover; /* Ensure the background image covers the section */
+    position: relative;
+}
 
+.about-content {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for the center */
+    width: 100%;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.about-content h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+/* About menu styling */
+.about-menu {
+    position: relative;
+}
+
+.about-options {
+    display: none;
+    list-style: none;
+    position: absolute;
+    background: #0a0a0a;
+    padding: 10px 0;
+    top: 100%; /* Position below the parent menu */
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1000;
+}
+
+.about-options li {
+    padding: 10px;
+}
+
+.about-options li a {
+    color: #ffffff;
+    font-size: 100%;
+    text-decoration: none;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.about-options li a:hover {
+    color: #f0a500;
+}
+
+.about-menu:hover .about-options {
+    display: block;
+}
+
+/* Expertise section styling */
+.expertise-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Make the expertise section full height */
+    background: url('expertise-background.jpg') no-repeat center center;
+    background-size: cover; /* Ensure the background image covers the section */
+    position: relative;
+}
+
+.expertise-content {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for the center */
+    width: 100%;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.expertise-content h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.expertise-content p {
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+/* Projects section styling */
+.projects-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Make the expertise section full height */
+    background: url('expertise-background.jpg') no-repeat center center;
+    background-size: cover; /* Ensure the background image covers the section */
+    position: relative;
+}
+
+.projects-content {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for the center */
+    width: 100%;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.projects-content h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.projects-content p {
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+/* Contact section styling */
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Make the expertise section full height */
+    background: url('expertise-background.jpg') no-repeat center center;
+    background-size: cover; /* Ensure the background image covers the section */
+    position: relative;
+}
+
+.contact-content {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for the center */
+    width: 100%;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.contact-content h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.contact-content p {
+    font-size: 1.5em;
+    font-weight: 300;
+}
 
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
@@ -153,6 +314,39 @@ header nav ul li a:hover {
     .tech-icons i {
         font-size: 1.5em;
     }
+
+   .about-content h2 {
+        font-size: 2em;
+    }
+
+    .about-content p {
+        font-size: 1.2em;
+    }
+
+    .expertise-content h2 {
+        font-size: 2em;
+    }
+
+    .expertise-content p {
+        font-size: 1.2em;
+    }
+
+    .projects-content h2 {
+        font-size: 2em;
+    }
+
+    .projects-content p {
+        font-size: 1.2em;
+    }
+        .contact-content h2 {
+        font-size: 2em;
+    }
+
+    .contact-content p {
+        font-size: 1.2em;
+    }
+
+    
 }
 
 @media (max-width: 480px) {
@@ -190,4 +384,54 @@ header nav ul li a:hover {
     .tech-icons i {
         font-size: 1.2em;
     }
+
+    
 }
+
+/* Specific section background images */
+.about-section {
+    background: url('about-background.jpg') no-repeat center center;
+}
+
+.expertise-section {
+    background: url('expertise-background.jpg') no-repeat center center;
+}
+
+.projects-section {
+    background: url('projects-background.jpg') no-repeat center center;
+}
+
+.contact-section {
+    background: url('contact-background.jpg') no-repeat center center;
+}
+
+/* Scroll to top button styling */
+#scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0a0a0a;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.5em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#scrollToTop:hover {
+    background-color: #333;
+    transform: scale(1.1);
+}
+
+#scrollToTop i {
+    font-size: 1.5em;
+}
+
+

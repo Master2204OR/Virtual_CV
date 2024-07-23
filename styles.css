@@ -25,9 +25,14 @@ header nav ul {
 header nav ul li a {
     /*Styling of navigation bar*/
     color: #ffffff;
+    font-family: fantasy;
     text-decoration: none;
     font-size: 130%;
     transition: color 0.3s ease;
+}
+
+nav ul li a .slash {
+    color: green; /* Make the slashes green */
 }
 
 header nav ul li a:hover {
@@ -39,7 +44,7 @@ header nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 600px;
+    height: 720px;
     background: url('bulp83-1714138587.jpg') no-repeat center center/cover;
     position: relative;
 }
@@ -50,6 +55,14 @@ header nav ul li a:hover {
     top: 600px; 
     width: 100%;
     text-align: center;
+}
+
+.hero-content .round-image {
+    width: 130px; /* Adjust the size as needed */
+    height: 130px; /* Adjust the size as needed */
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 100px; /* Increase the margin-bottom to add more space between the image and text */
 }
 
 

@@ -1,3 +1,4 @@
+/* General styling */
 * {
     margin: 0;
     padding: 0;
@@ -21,6 +22,7 @@ header nav ul {
     display: flex;
     justify-content: center;
     gap: 80px;
+    flex-wrap: wrap; /* Allow wrapping */
 }
 
 header nav ul li {
@@ -49,7 +51,7 @@ header nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Make the hero section full height */
+    min-height: 100vh; /* Make the hero section full height */
     background: url('bulp83-1714138587.jpg') no-repeat center center;
     background-size: cover; /* Ensure the background image covers the section */
     position: relative;
@@ -57,7 +59,7 @@ header nav ul li a:hover {
 
 .hero-content {
     position: absolute;
-    top: 47%; /* Center vertically */
+    top: 50%; /* Center vertically */
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Adjust for the center */
     width: 100%;
@@ -70,7 +72,7 @@ header nav ul li a:hover {
     height: 170px; /* Adjust the size as needed */
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 180px; /* Increase the margin-bottom to add more space between the image and text */
+    margin-bottom: 20px; /* Increase the margin-bottom to add more space between the image and text */
 }
 
 .hero-content h1 {
@@ -112,25 +114,32 @@ header nav ul li a:hover {
     transform: scale(1.2);
 }
 
+
+
+
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
     header nav ul {
-        flex-wrap: wrap; /* Allow wrapping */
-        gap: 10px;
+        gap: 20px;
     }
 
     header nav ul li {
-        flex: 1 1 4%; /* Adjust width for two columns */
+        flex: 1 1 45%; /* Adjust width for two columns */
         margin: 10px 0; /* Add some margin for spacing */
     }
 
     header nav ul li a {
-        font-size: 200%;
+        font-size: 1.2em;
     }
 
     .hero-section {
         height: 80vh; /* Adjust height for smaller screens */
         background-size: cover; /* Ensure the background image covers the section */
+    }
+
+    .hero-content .round-image {
+        width: 150px; /* Adjust the size for smaller screens */
+        height: 150px; /* Adjust the size for smaller screens */
     }
 
     .hero-content h1 {
@@ -148,7 +157,6 @@ header nav ul li a:hover {
 
 @media (max-width: 480px) {
     header nav ul {
-        flex-wrap: wrap; /* Allow wrapping */
         gap: 10px;
     }
 

@@ -52,17 +52,17 @@ header nav ul li a:hover {
 
 .hero-content {
     position: absolute;
-    top: 600px; 
+    top: 500px; 
     width: 100%;
     text-align: center;
 }
 
 .hero-content .round-image {
-    width: 130px; /* Adjust the size as needed */
-    height: 130px; /* Adjust the size as needed */
+    width: 200px; /* Adjust the size as needed */
+    height: 200px; /* Adjust the size as needed */
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 100px; /* Increase the margin-bottom to add more space between the image and text */
+    margin-bottom: 150px; /* Increase the margin-bottom to add more space between the image and text */
 }
 
 
@@ -91,7 +91,7 @@ header nav ul li a:hover {
 /* Apply the animation to hero-content */
 .hero-content {
     position: absolute;
-    top: 400px; 
+    top: 40px; 
     width: 100%;
     text-align: center;
     animation: fadeIn 1.5s ease-in-out;
@@ -112,6 +112,72 @@ header nav ul li a:hover {
 
 .tech-icons i:hover {
     transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    header nav ul li a {
+        font-size: 100%;
+    }
+
+    .hero-section {
+        height: 500px; /* Adjust height for smaller screens */
+    }
+
+    .hero-content {
+        top: 250px; /* Adjust this value for smaller screens */
+    }
+
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-content p {
+        font-size: 1.2em;
+    }
+
+    .tech-icons i {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    header nav ul {
+        gap: 10px;
+    }
+
+    .hero-section {
+        height: 400px; /* Adjust height for smaller screens */
+    }
+
+    .hero-content {
+        top: 200px; /* Adjust this value for smaller screens */
+    }
+
+    .hero-content .round-image {
+        width: 100px; /* Adjust the size for smaller screens */
+        height: 100px; /* Adjust the size for smaller screens */
+    }
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .tech-icons {
+        gap: 10px;
+    }
+
+    .tech-icons i {
+        font-size: 1.2em;
+    }
 }
 
 

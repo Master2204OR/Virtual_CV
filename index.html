@@ -3,35 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SoneleSodo_Website</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css"> <!--links to external css file-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="mediaqueries.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!--P    opular icon library that provides scalable vector icons-->
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
+    
+        <nav id="desktop-nav">
+            <div class="logo">Sonele Sodo</div>
+            <div>
+            <ul class="nav-links">
                 <!--Navigation menu-->
-                <li><a href="#about"><span class="slash">//</span>ABOUT</a></li>
-                <li><a href="#expertise"><span class="slash">//</span>EXPERTISE</a></li>
-                <li><a href="#projects"><span class="slash">//</span>PROJECTS</a></li>
-                <li><a href="#contact"><span class="slash">//</span>CONTACT</a></li>
+                <li><a href="#about"><span class="slash">//</span>About</a></li>
+                <li><a href="#resume"><span class="slash">//</span>Resume</a></li>
+                <li><a href="#skills"><span class="slash">//</span>Skills</a></li>
+                <li><a href="#projects"><span class="slash">//</span>Projects</a></li>
+                <li><a href="#contact"><span class="slash">//</span>Contact</a></li>
             </ul>
+         </div>
         </nav>
-    </header>
-    <section id="home" class="hero-section">
-        <div class="hero-content">
-            <img src="Sonele_Profile.jpg" alt="Sonele" class="round-image">
-            <h1>SONELE SODO</h1>
-            <p>Aspiring Software Developer. Tech and data enthusiast</p>
-            <div class="tech-icons">
-                <i class="fab fa-html5"></i>
-                <i class="fab fa-css3-alt"></i>
-                <i class="fab fa-js"></i>
-                <i class="fab fa-react"></i>
+        <nav id="hamburger-nav">
+            <div class="logo">Sonele Sodo</div>
+            <div class="hamburger-menu">
+               <div class="hamburger-icon" onclick="toggleMenu()">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+               </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#resume" onclick="toggleMenu()">Resume</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
-        </div>
-    </section>
+        </nav>
+    
+    
     <section id="about" class="about-section">
         <div class="about-content">
             <h2>About Me</h2>
@@ -56,6 +65,24 @@
             <p>How to get in touch with me.</p>
         </div>
     </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2024 Your Name. All rights reserved.</p>
+</footer>
     <!-- Scroll to top button -->
     <button id="scrollToTop" title="Go to top">
         <i class="fas fa-chevron-up"></i>

@@ -164,8 +164,8 @@ min-height: fit-content;
 
 .section_pic-container{
     display: flex;
-    height: 400px;
-    width: 400px;
+    height: 350px;
+    width: 300px;
     margin: auto 0;
 }
 
@@ -257,15 +257,78 @@ min-height: fit-content;
 }
 
 /* About section styling */
-.about-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* Make the about section full height */
-    background: url('about-background.jpg') no-repeat center center;
-    background-size: cover; /* Ensure the background image covers the section */
+
+#about{
     position: relative;
 }
+.about-containers{
+gap: 2rem;
+margin-bottom: 2rem;
+margin-top: 1rem;
+justify-content: center;
+}
+
+.about-details-containers{
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-containers,
+.about-details-containers{
+display: flex;
+}
+
+.details-container{
+    padding: 5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53,53,53) 0.2rem solid;
+    text-align: left;
+    font-size: 1.05rem;
+}
+
+.details-containers {
+    padding: 5rem; /* Increased padding for a larger block */
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53,53,53) 0.2rem solid;
+    text-align: left; /* Align text to the left */
+    font-size: 1.05rem; /* Increased font size */
+}
+
+.details-content {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: max-content auto;
+    gap: 0.5rem 1rem; /* Adjust spacing between rows and columns */
+}
+
+.detail-item {
+    display: contents;
+}
+
+.detail-title {
+    font-weight: bold;
+}
+
+.detail-info {
+    margin-left: 1rem;
+}
+
+.icon {
+    cursor: pointer;
+    height: 2rem; /* Adjust the size as needed */
+    width: 2rem; /* Adjust the size as needed */
+    border-radius: 50%; /* Make the image round */
+    object-fit: cover; /* Ensure the image fits within the round shape */
+    margin-bottom: 1rem; /* Add some space below the icon */
+}
+
+
+
+
 
 
 /* Expertise section styling */

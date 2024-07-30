@@ -47,7 +47,7 @@ a{
     text-decoration-color: white;
 }
 .slash {
-    color: green; /* Make the slashes green */
+    color: darkgreen; /* Make the slashes green */
 }
 
 a:hover {
@@ -164,8 +164,8 @@ min-height: fit-content;
 
 .section_pic-container{
     display: flex;
-    height: 350px;
-    width: 300px;
+    height: 300px;
+    width: 270px;
     margin: auto 0;
 }
 
@@ -258,51 +258,63 @@ min-height: fit-content;
 
 /* About section styling */
 
-#about{
-    position: relative;
-}
-.about-containers{
-gap: 2rem;
-margin-bottom: 2rem;
-margin-top: 1rem;
-justify-content: center;
+
+/* Section Title */
+
+/* Section Title */
+.title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
-.about-details-containers{
-    justify-content: center;
+/* About Section Layout */
+#about {
+    padding: 2rem;
+   /* background-color: #f5f5f5;  Light background color */
+}
+
+.section-container {
+    display: flex;
     flex-direction: column;
+    gap: 2rem; /* Space between sections */
 }
 
-.about-containers,
-.about-details-containers{
-display: flex;
+.about-details-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
-.details-container{
-    padding: 5rem;
-    flex: 1;
+/* About Containers */
+.about-containers {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* Space between containers */
+}
+
+/* Personal Statement */
+.Personal_Statement-container {
+    padding: 1.5rem;
     background: white;
-    border-radius: 2rem;
-    border: rgb(53,53,53) 0.2rem solid;
+    border-radius: 1rem;
+    border: 1px solid #ddd;
     text-align: left;
-    font-size: 1.05rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
-.details-containers {
-    padding: 5rem; /* Increased padding for a larger block */
-    flex: 1;
-    background: white;
-    border-radius: 2rem;
-    border: rgb(53,53,53) 0.2rem solid;
-    text-align: left; /* Align text to the left */
-    font-size: 1.05rem; /* Increased font size */
+.Personal_Statement-container img.icon {
+    height: 2rem; /* Adjust as needed */
+    width: 2rem; /* Adjust as needed */
 }
 
 .details-content {
     margin-top: 1rem;
     display: grid;
     grid-template-columns: max-content auto;
-    gap: 0.5rem 1rem; /* Adjust spacing between rows and columns */
+    gap: 0.5rem 1rem; /* Adjust spacing */
 }
 
 .detail-item {
@@ -317,6 +329,30 @@ display: flex;
     margin-left: 1rem;
 }
 
+/* Flex container for Experience and Education */
+.experience-education-container {
+    display: flex;
+    gap: 2rem; /* Space between containers */
+}
+
+/* Experience and Education Containers */
+.Experience-container, .Education-container {
+    padding: 5rem;
+    background: white;
+    border-radius: 1rem;
+    border: 1px solid #ddd;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex: 1; /* Allow containers to grow and shrink */
+}
+
+.Experience-container img.icon, .Education-container img.icon {
+    height: 2rem; /* Adjust as needed */
+    width: 2rem; /* Adjust as needed */
+}
+
 .icon {
     cursor: pointer;
     height: 2rem; /* Adjust the size as needed */
@@ -326,20 +362,10 @@ display: flex;
     margin-bottom: 1rem; /* Add some space below the icon */
 }
 
-
-
-
-
-
-/* Expertise section styling */
-.expertise-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* Make the expertise section full height */
-    background: url('expertise-background.jpg') no-repeat center center;
-    background-size: cover; /* Ensure the background image covers the section */
-    position: relative;
+/* Skiils section styling */
+.skills-content{
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 

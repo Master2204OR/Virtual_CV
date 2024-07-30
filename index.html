@@ -6,7 +6,63 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css"> <!--links to external css file-->
     <link rel="stylesheet" href="mediaqueries.css"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!--P    opular icon library that provides scalable vector icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!--Popular icon library that provides scalable vector icons-->
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load("current", {packages:["corechart"]});
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Skill', 'Percentage', { role: 'style' }],
+                ['C# (Technical Skill)', 80, 'color: blue'],
+                ['Communication (Soft Skill)', 70, 'color: green'],
+                ['Oracle (Technology)', 75, 'color: orange'],
+                ['SQL (Technical Skill)', 65, 'color: blue'],
+                ['Teamwork (Soft Skill)', 100, 'color: green'],
+                ['Azure (Technology)', 60, 'color: orange'],
+            ]);
+
+            var options = {
+                title: '',
+                legend: { position: 'none' },
+                hAxis: {
+                    title: 'Percentage',
+                    minValue: 0,
+                    maxValue: 100
+                },
+                vAxis: {
+                    title: ''
+                },
+                bars: 'horizontal' // Make the bars horizontal
+            };
+
+            var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+            chart.draw(data, options);
+        }
+    </script>
+    <style>
+        .legend {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin: 0 15px;
+        }
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .legend-text {
+            font-size: 1rem;
+        }
+    </style>
 </head>
 <body>
     
@@ -62,60 +118,67 @@
                 
             </div>
         </section>
-    <section id="about">
-            <h1 class ="title">About Me</h2>
-                <div class="section-container">
-                    <div class="about-details-container">
-                        <div class="about-containers">
-                            <div class="details-container">
-                                <img src="images\bulp83-1714138587.jpg" alt="PersonalStatement icon" class="icon">
-                                <h3>Personal Statement</h3>
-                                <p><br> Motivated and dedicated final year IT student with a passion for technology and a strong academic background
-                                    in Information Technology. Proficient in various programming languages, software development methodologies,
-                                    and IT concepts. Skilled in problem-solving and adapt at collaborating with team members to achieve project
-                                    objectives. Eager to leverage theoretical knowledge gained through coursework and hands-on experience to
-                                    contribute effectively to innovative projects and solutions in the IT industry</p>
-                            </div>
-                            <div class="details-containers">
-                                <img src="images/bulp83-1714138587.jpg" alt="PersonalDetail icon" class="icon">
-                                <h3>Personal Details</h3>
-                                <div class="details-content">
-                                    <div class="detail-item">
-                                        <span class="detail-title">Surname:</span>
-                                        <span class="detail-info">Sodo</span>
-                                    </div>
-                                    <div class="detail-item">
-                                        <span class="detail-title">Name:</span>
-                                        <span class="detail-info">Sonele</span>
-                                    </div>
-                                    <div class="detail-item">
-                                        <span class="detail-title">Address:</span>
-                                        <span class="detail-info">21 Molengraaff street</span>
-                                    </div>
-                                    <div class="detail-item">
-                                        <span class="detail-title">City:</span>
-                                        <span class="detail-info">Phalaborwa</span>
-                                    </div>
-                                    <div class="detail-item">
-                                        <span class="detail-title">Driver’s License:</span>
-                                        <span class="detail-info">Code 8</span>
-                                    </div>
-                                    <div class="detail-item">
-                                        <span class="detail-title">Alternative number:</span>
-                                        <span class="detail-info">0715150268</span>
-                                    </div>
+        <section id="about">
+            <h1 class="title">About Me</h1>
+            <div class="section-container">
+                <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="Personal_Statement-container">
+                            <img src="images/bulp83-1714138587.jpg" alt="Personal Statement icon" class="icon">
+                            <h3>Personal Statement</h3>
+                            <p>Motivated and dedicated final year IT student with a passion for technology and a strong academic background
+                                in Information Technology. Proficient in various programming languages, software development methodologies,
+                                and IT concepts. Skilled in problem-solving and adept at collaborating with team members to achieve project
+                                objectives. Eager to leverage theoretical knowledge gained through coursework and hands-on experience to
+                                contribute effectively to innovative projects and solutions in the IT industry.
+                            </p>
+                        </div>
+                        <div class="experience-education-container">
+                            <div class="Experience-container">
+                                <img src="images/bulp83-1714138587.jpg" alt="Experience icon" class="icon">
+                                <div>
+                                    <h3>Experience</h3>
+                                    <ul>
+                                    <li><p>Aug 2023 - Nov 2023<br>C# Student Assistant</p></li>
+                                    <br><li><p>Jul 2024 - Oct 2024<br>Java Student Assistant</p></li>
+                                </ul>
                                 </div>
                             </div>
-                            
+                            <div class="Education-container">
+                                <img src="images/bulp83-1714138587.jpg" alt="Education icon" class="icon">
+                                <div>
+                                    <h3>Education</h3>
+                                    <ul>
+                                    <li><p>Hoerskool Frans Dut Toit Jan (2017 - Dec 2021)<br>National Senior Certificate</p></li>
+                                    <br><li><p>North West University (Feb 2022 - Nov 2024)<br>BSc Information Technology</p></li>
+                                </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>   
-    </section>
-    <section id="expertise" class="expertise-section">
-        <div class="expertise-content">
-            <h2>Expertise</h2>
-            <p>Details about my expertise and skills.</p>
-        </div>
+                </div>
+            </div>   
+        </section>
+        
+
+    <section id="skills" class="skills-section">
+        <div class="skills-content">
+            <h2>Top Skills</h2>
+            <div id="chart_div" style="width: 1000px; height: 500px;"></div>
+            <div class="legend">
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: blue;"></div>
+                    <div class="legend-text">Technical Skill</div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: green;"></div>
+                    <div class="legend-text">Soft Skill</div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: orange;"></div>
+                    <div class="legend-text">Technology</div>
+                </div>
+        </div>     
     </section>
     <section id="projects" class="projects-section">
         <div class="projects-content">

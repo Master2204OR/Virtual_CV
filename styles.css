@@ -573,7 +573,7 @@ footer p{
 /* Initial state: Hidden and transparent */
 .element {
     opacity: 0;
-    transition: opacity 0.5s ease-in;
+    transition: opacity 1s ease-in;
 }
 
 /* Final state: Fully visible */

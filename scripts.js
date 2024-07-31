@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }, {
-        threshold: 0.5  // Trigger the callback when 10% of the element is visible
+        threshold: 0.3  // Trigger the callback when 10% of the element is visible
     });
 
     // Observe each element

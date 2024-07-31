@@ -268,9 +268,9 @@ min-height: fit-content;
     margin-bottom: 2rem;
 }
 
-/* About Section Layout */
+/* Default Styles for Larger Screens */
 #about {
-    padding: 2rem;   
+    padding: 2rem;
 }
 
 .section-container {
@@ -285,14 +285,12 @@ min-height: fit-content;
     gap: 2rem;
 }
 
-/* About Containers */
 .about-containers {
     display: flex;
     flex-direction: column;
     gap: 2rem; /* Space between containers */
 }
 
-/* Personal Statement */
 .Personal_Statement-container {
     padding: 1.5rem;
     background: white;
@@ -328,13 +326,11 @@ min-height: fit-content;
     margin-left: 1rem;
 }
 
-/* Flex container for Experience and Education */
 .experience-education-container {
     display: flex;
     gap: 2rem; /* Space between containers */
 }
 
-/* Experience and Education Containers */
 .Experience-container, .Education-container {
     padding: 5rem;
     background: white;
@@ -360,6 +356,67 @@ min-height: fit-content;
     object-fit: cover; /* Ensure the image fits within the round shape */
     margin-bottom: 1rem; 
 }
+
+/* Media Query for Small Screens */
+@media screen and (max-width: 375px) {
+
+    #about {
+        padding: 1rem; /* Reduced padding */
+    }
+
+    .section-container {
+        gap: 1rem; /* Reduced space between sections */
+    }
+
+    .about-details-container {
+        gap: 1rem; /* Reduced space between details */
+    }
+
+    .about-containers {
+        gap: 1rem; /* Reduced space between containers */
+    }
+
+    .Personal_Statement-container {
+        padding: 1rem; /* Reduced padding */
+        flex-direction: column; /* Stack items vertically */
+        gap: 0.5rem; /* Reduced space between items */
+    }
+
+    .Personal_Statement-container img.icon {
+        height: 1.5rem; /* Adjusted size */
+        width: 1.5rem; /* Adjusted size */
+    }
+
+    .details-content {
+        grid-template-columns: 1fr; /* Stack items vertically */
+        gap: 0.5rem; /* Adjust spacing */
+    }
+
+    .detail-info {
+        margin-left: 0; /* Removed margin */
+    }
+
+    .experience-education-container {
+        flex-direction: column; /* Stack containers vertically */
+        gap: 1rem; /* Reduced space between containers */
+    }
+
+    .Experience-container, .Education-container {
+        padding: 1rem; /* Reduced padding */
+        gap: 0.5rem; /* Reduced space between items */
+    }
+
+    .Experience-container img.icon, .Education-container img.icon {
+        height: 1.5rem; /* Adjusted size */
+        width: 1.5rem; /* Adjusted size */
+    }
+
+    .icon {
+        height: 1.5rem; /* Adjusted size */
+        width: 1.5rem; /* Adjusted size */
+    }
+}
+
 
 /* Skiils section styling */
 

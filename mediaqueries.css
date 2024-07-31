@@ -48,4 +48,163 @@
     
 }
 
+@media screen and (max-width: 375px) {
+    /* Adjust the profile section */
+    #profile {
+        flex-direction: column;
+        height: auto;
+        gap: 2rem;
+    }
+
+    .section_pic-container {
+        height: 200px;
+        width: 180px;
+    }
+
+    .section_text_p2 {
+        font-size: 1.25rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    /* Adjust buttons */
+    .btn {
+        padding: 0.5rem;
+        width: 6rem;
+    }
+
+    /* Adjust social icons */
+    #socials_container {
+        gap: 0.5rem;
+    }
+
+    .icon {
+        height: 2rem;
+    }
+
+
+    /* Adjust Section Title */
+    .title {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    /* About Section */
+    #about {
+        padding: 1rem;
+    }
+
+    .section-container {
+        gap: 1rem; /* Reduced space between sections */
+    }
+
+    .about-details-container {
+        gap: 1rem; /* Reduced space between details */
+    }
+
+    .about-containers {
+        gap: 1rem; /* Reduced space between containers */
+    }
+
+    /* Personal Statement */
+    .Personal_Statement-container {
+        padding: 1rem;
+        gap: 0.5rem;
+    }
+
+    .Personal_Statement-container img.icon {
+        height: 1.5rem; 
+        width: 1.5rem; 
+    }
+
+    .details-content {
+        grid-template-columns: max-content 1fr; /* Adjusted for smaller screens */
+        gap: 0.25rem 0.5rem;
+    }
+
+    .detail-info {
+        margin-left: 0.5rem;
+    }
+
+    /* Experience and Education Containers */
+    .experience-education-container {
+        flex-direction: column; /* Stack containers vertically */
+        gap: 1rem;
+    }
+
+    .Experience-container, .Education-container {
+        padding: 1rem;
+        gap: 0.5rem;
+    }
+
+    .Experience-container img.icon, .Education-container img.icon {
+        height: 1.5rem; 
+        width: 1.5rem; 
+    }
+
+    .icon {
+        height: 1.5rem;
+        width: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .legend {
+        flex-direction: column;
+        margin: 10px; /* Reduced margin */
+        gap: 10px; /* Add gap between items */
+    }
+
+    .legend-item {
+        margin: 0; /* Remove horizontal margin */
+    }
+
+    .legend-color {
+        width: 15px; /* Smaller size */
+        height: 15px; /* Smaller size */
+        margin-right: 5px; /* Smaller margin */
+    }
+
+    .legend-text {
+        font-size: 0.875rem; /* Reduced font size */
+    }
+
+    #chart_div {
+        width: 100%; /* Full width for smaller screens */
+        height: auto; /* Adjust height proportionally */
+        max-height: 300px; /* Limit max height */
+    }
+
+    #projects {
+        padding: 1rem; /* Further reduce padding for very small screens */
+    }
+
+    .title {
+        font-size: 1.75rem; /* Further reduce title size */
+    }
+
+    .details-container {
+        padding: 0.5rem; /* Adjust padding for smaller elements */
+        max-width: 100%; /* Ensure full width */
+    }
+
+    .project-title {
+        font-size: 1.25rem; /* Slightly smaller font size */
+    }
+
+    .btn-container {
+        margin-top: 0.5rem; /* Adjust margin */
+        gap: 0.5rem; /* Reduce gap */
+    }
+
+    .project-btn {
+        padding: 0.5rem 0.75rem; /* Adjust padding */
+    }
+
+}
+
+
+
+
 

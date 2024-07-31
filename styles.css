@@ -7,6 +7,10 @@
 
 body {
     font-family: Arial, sans-serif;
+    background-image: url('images/wp2903050-2438088562.jpg'); /* Path to your image */
+    background-size: cover; /* Scale the background image to cover the entire page */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
 }
 
 html{
@@ -17,6 +21,10 @@ p{
     color: grey;
 }
 
+.header{
+    background-color: black;
+    color: white;
+}
  
 /* Transition*/
 a,.btn{
@@ -42,7 +50,7 @@ nav{
 }
 
 a{
-    color: black;
+    color: white;
     text-decoration: none;
     text-decoration-color: white;
 }
@@ -88,7 +96,7 @@ a:hover {
 .hamburger-icon span{
     width: 100%;
     height: 2px;
-    background-color: black;
+    background-color: white;
     transition: all 0.3 ease-in-out;
 }
 
@@ -96,7 +104,7 @@ a:hover {
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: white;
+    background-color: black;
     width: fit-content;
     max-height: 0;
     overflow: hidden;
@@ -108,7 +116,7 @@ a:hover {
     padding: 10px;
     text-align: center;
     font-size: 1.5rem;
-    color: black;
+    color: white;
     text-decoration: none;
     transition: all 0.3 ease-in-out;
 }
@@ -256,10 +264,6 @@ min-height: fit-content;
     height: auto;
 }
 
-/* About section styling */
-
-
-/* Section Title */
 
 /* Section Title */
 .title {
@@ -270,8 +274,7 @@ min-height: fit-content;
 
 /* About Section Layout */
 #about {
-    padding: 2rem;
-   /* background-color: #f5f5f5;  Light background color */
+    padding: 2rem;   
 }
 
 .section-container {
@@ -343,14 +346,14 @@ min-height: fit-content;
     border: 0.0625rem solid #ddd;
     text-align: left;
     display: flex;
-    align-items: center;
+    align-items: top;
     gap: 1rem;
     flex: 1; /* Allow containers to grow and shrink */
 }
 
 .Experience-container img.icon, .Education-container img.icon {
-    height: 2rem; /* Adjust as needed */
-    width: 2rem; /* Adjust as needed */
+    height: 2rem; 
+    width: 2rem; 
 }
 
 .icon {
@@ -359,10 +362,11 @@ min-height: fit-content;
     width: 2rem; /* Adjust the size as needed */
     border-radius: 50%; /* Make the image round */
     object-fit: cover; /* Ensure the image fits within the round shape */
-    margin-bottom: 1rem; /* Add some space below the icon */
+    margin-bottom: 1rem; 
 }
 
 /* Skiils section styling */
+
 .skills-content{
     text-align: center;
     font-size: 1.5rem;
@@ -373,6 +377,7 @@ min-height: fit-content;
 /* Projects section styling */
 #projects {
     padding: 4rem 2rem;
+    
 }
 
 .section_text_p1 {
@@ -393,7 +398,7 @@ min-height: fit-content;
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
-    padding: 2rem;
+    padding: 0.5rem;
 }
 
 .details-container {
@@ -418,7 +423,6 @@ min-height: fit-content;
 }
 
 .project-title {
-    margin-top: 1rem;
     font-size: 1.5rem;
     font-weight: bold;
 }
@@ -449,31 +453,34 @@ min-height: fit-content;
 
 /* Contact section styling */
 #contact {
-    background-color: #1e1e1e; /* Dark background for a tech feel */
-    padding: 2rem 2rem;
+     /* Dark background for a tech feel */
+    background-size: 50px 100px;
+    padding: 2rem ;
     color: #f0f0f0;
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    
 }
 
 .contact-section h2 {
     font-size: 2.5rem;
-    margin-bottom: 2rem;
-    color: #00ffcc; /* Tech-themed accent color */
+    margin-top: 2rem;
+    color: black; /* Tech-themed accent color */
 }
 
 .contact-section form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 100%;
+    max-width: 50%;
     margin: 0 auto;
+    margin-top: 3rem;
 }
 
 .contact-section label {
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
-    color: #b0b0b0;
+    color: black;
     align-self: flex-start;
 }
 
@@ -484,7 +491,7 @@ min-height: fit-content;
     margin-bottom: 1.5rem;
     border: none;
     border-radius: 0.5rem;
-    background-color: #333;
+    background-color: white;
     color: #f0f0f0;
     font-size: 1rem;
     outline: none;
@@ -519,32 +526,18 @@ min-height: fit-content;
 }
 
 /*Footer*/
-footer{
-    height: 26vh;
-    margin: 0 1rem;
+.footer{
+    height: 22vh;
+    background-color: black;
 }
 
 footer p{
     text-align: center;
+    color: white;
 }
 
 
-/* Specific section background images */
-.about-section {
-    background: url('about-background.jpg') no-repeat center center;
-}
 
-.expertise-section {
-    background: url('images\th-390616328') no-repeat center center;
-}
-
-.projects-section {
-    background: url('projects-background.jpg') no-repeat center center;
-}
-
-.contact-section {
-    background: url('contact-background.jpg') no-repeat center center;
-}
 
 /* Scroll to top button styling */
 #scrollToTop {

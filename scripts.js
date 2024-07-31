@@ -28,3 +28,26 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const elements = document.querySelectorAll('.element');
+
+    // Create an IntersectionObserver instance
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            } else {
+                entry.target.classList.remove('visible');
+            }
+        });
+    }, {
+        threshold: 0.5  // Trigger the callback when 10% of the element is visible
+    });
+
+    // Observe each element
+    elements.forEach(element => {
+        observer.observe(element);
+    });
+});
+

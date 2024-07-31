@@ -39,7 +39,7 @@ nav,.nav-links {
 nav{
     justify-content: space-around;
     align-items: center; /* Center align each item */
-    height: 17vh;
+    height: 20vh;
     
 }
 
@@ -370,6 +370,7 @@ min-height: fit-content;
 .skills-content{
     text-align: center;
     font-size: 1.5rem;
+    margin-top: 1rem;
 }
 
 
@@ -567,6 +568,17 @@ footer p{
 
 #scrollToTop i {
     font-size: 1.5em;
+}
+
+/* Initial state: Hidden and transparent */
+.element {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+/* Final state: Fully visible */
+.element.visible {
+    opacity: 1;
 }
 
 

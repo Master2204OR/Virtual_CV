@@ -556,15 +556,71 @@ min-height: fit-content;
 }
 
 /*Footer*/
-.footer{
-    height: 22vh;
+.footer {
     background-color: black;
+    padding: 1rem; /* Padding around footer content */
+    text-align: center; /* Center text inside footer */
 }
 
-footer p{
-    text-align: center;
-    color: white;
+.footer nav {
+    margin-bottom: 1rem; /* Space between nav and copyright text */
 }
+
+.nav-links-container {
+    display: flex;
+    justify-content: center; /* Center nav links horizontally */
+    margin-bottom: 1rem; /* Space between nav and copyright text */
+}
+
+.nav-links {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Display links in a row */
+    gap: 1rem; /* Space between links */
+}
+
+.nav-links li {
+    margin: 0; /* Remove default margin */
+}
+
+.nav-links a {
+    text-decoration: none; /* Remove underlines from links */
+    color: white; /* Text color */
+    font-size: 1rem; /* Font size for links */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.nav-links a:hover {
+    color: #aaa; /* Change color on hover */
+}
+
+.footer p {
+    color: white;
+    margin: 0; /* Remove default margin */
+}
+
+/* Media Query for Small Screens */
+@media screen and (max-width: 375px) {
+    .footer {
+        padding: 1rem; /* Padding around footer content */
+    }
+
+    .nav-links-container {
+        flex-direction: column; /* Stack links vertically on small screens */
+        gap: 0.5rem; /* Space between links */
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stack links vertically on small screens */
+        gap: 0.5rem; /* Space between links */
+    }
+
+    .nav-links a {
+        font-size: 1.2rem; /* Slightly larger text for small screens */
+    }
+}
+
 
 
 

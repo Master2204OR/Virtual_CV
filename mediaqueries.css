@@ -201,7 +201,23 @@
     .project-btn {
         padding: 0.5rem 0.75rem; /* Adjust padding */
     }
+    .footer {
+        padding: 1rem; /* Padding around footer content */
+    }
 
+    .nav-links-container {
+        flex-direction: column; /* Stack links vertically on small screens */
+        gap: 0.5rem; /* Space between links */
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stack links vertically on small screens */
+        gap: 0.5rem; /* Space between links */
+    }
+
+    .nav-links a {
+        font-size: 1.2rem; /* Slightly larger text for small screens */
+    }
 }
 
 

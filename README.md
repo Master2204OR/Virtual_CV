@@ -15,11 +15,11 @@ Welcome to my dynamic portfolio website, a virtual CV showcasing my professional
 # Setup
  Clone the repository: gh repo clone Master2204OR/Virtual_CV
 
-Future Enhancements
+#Future Enhancements
 -Blog Section
 -Services Section
 
-Contact Information
+#Contact Information
 -Email: sonelesodo@gmail.com
 -LinkedIn: www.linkedin.com/in/sonele-sodo-530b16257
 -GitHub: https://github.com/Master2204OR

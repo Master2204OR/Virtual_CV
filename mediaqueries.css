@@ -220,36 +220,40 @@
     }
 }
 
+/* Media Query for Screens with max-width of 1080px */
 @media screen and (max-width: 1080px) {
-    /* Adjust padding for the about section */
+    /* General adjustments for the about section */
     #about {
-        padding: 1.5rem; /* Reduced padding for medium screens */
+        padding: 1rem; /* Reduce padding to fit content better */
+        margin: 0 1rem; /* Reduce margin for better fit */
     }
 
     /* Adjust section container styles */
     .section-container {
-        gap: 1.5rem; /* Reduced space between sections */
+        flex-direction: column; /* Stack sections vertically */
+        gap: 1rem; /* Reduce space between sections */
     }
 
     /* Adjust the container for project details */
     .experience-details-container {
-        gap: 1.5rem; /* Reduced space between project details */
+        flex-direction: column; /* Stack project details vertically */
+        gap: 1rem; /* Reduce space between project details */
     }
 
-    /* Adjust the project containers */
     .details-container {
-        flex: 1 1 calc(50% - 1.5rem); /* Adjust width and spacing */
-        max-width: calc(50% - 1.5rem);
+        flex: 1 1 100%; /* Make project containers full width */
+        max-width: 100%; /* Ensure containers fit within the screen */
     }
 
     /* Adjust the project images */
     .project-image {
-        width: 85%; /* Adjust width for medium screens */
+        width: 100%; /* Make project images fit the container */
+        height: auto; /* Maintain aspect ratio */
     }
 
     /* Adjust font sizes for titles and text */
     .title {
-        font-size: 2rem; /* Smaller font size for medium screens */
+        font-size: 2rem; /* Smaller font size for better fit */
     }
 
     .section_text_p1 {
@@ -257,9 +261,22 @@
     }
 
     .project-title {
-        font-size: 1.25rem; /* Smaller font size for project titles */
+        font-size: 1.25rem; /* Adjust project title size */
+    }
+
+    /* Adjust buttons */
+    .project-btn {
+        padding: 0.5rem 0.75rem; /* Reduce button padding */
+        font-size: 0.875rem; /* Smaller font size for buttons */
+    }
+
+    /* Ensure overall container fit */
+    .section_pic-container {
+        width: 100%; /* Make image containers full width */
+        margin: 1rem 0; /* Add margin for spacing */
     }
 }
+
 
     @media screen and (max-width: 430px) {
         #about {

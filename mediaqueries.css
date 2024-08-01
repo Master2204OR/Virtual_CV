@@ -220,6 +220,141 @@
     }
 }
 
+    @media screen and (max-width: 430px) {
+        #about {
+            padding: 1.5rem; /* Reduced padding */
+        }
+    
+        .section-container {
+            gap: 1.5rem; /* Adjusted space between sections */
+        }
+    
+        .about-details-container {
+            gap: 1.5rem; /* Adjusted space between details */
+        }
+    
+        .about-containers {
+            gap: 1.5rem; /* Adjusted space between containers */
+        }
+    
+        .Personal_Statement-container {
+            padding: 1.25rem; /* Reduced padding */
+            flex-direction: column; /* Stack items vertically */
+            gap: 0.75rem; /* Adjusted space between items */
+        }
+    
+        .Personal_Statement-container img.icon {
+            height: 1.75rem; /* Adjusted size */
+            width: 1.75rem; /* Adjusted size */
+        }
+    
+        .details-content {
+            grid-template-columns: 1fr; /* Stack items vertically */
+            gap: 0.75rem; /* Adjusted spacing */
+        }
+    
+        .detail-info {
+            margin-left: 0; /* Removed margin */
+        }
+    
+        .experience-education-container {
+            flex-direction: column; /* Stack containers vertically */
+            gap: 1.5rem; /* Adjusted space between containers */
+        }
+    
+        .Experience-container, .Education-container {
+            padding: 1.25rem; /* Reduced padding */
+            gap: 0.75rem; /* Adjusted space between items */
+        }
+    
+        .Experience-container img.icon, .Education-container img.icon {
+            height: 1.75rem; /* Adjusted size */
+            width: 1.75rem; /* Adjusted size */
+        }
+    
+        .icon {
+            height: 1.75rem; /* Adjusted size */
+            width: 1.75rem; /* Adjusted size */
+        }
+
+        section {
+            margin: 0 2rem; /* Reduced margin for larger small screens */
+        }
+    
+        #profile {
+            flex-direction: column;
+            gap: 3rem; /* Increased gap between items */
+        }
+    
+        .section_pic-container {
+            width: 100%; /* Full width for images */
+            height: auto; /* Auto height for responsive images */
+        }
+    
+        .section_text_p2 {
+            font-size: 1.6rem; /* Adjusted font size */
+        }
+    
+        .title {
+            font-size: 2.8rem; /* Adjusted font size */
+        }
+    
+        .icon {
+            height: 2.5rem; /* Adjusted icon size */
+        }
+    
+        .btn {
+            width: 7rem; /* Adjusted button width */
+        }
+    
+        .btn-container {
+            flex-direction: column; /* Stack buttons vertically */
+            gap: 1.5rem; /* Adjusted gap between buttons */
+            align-items: center;
+        }
+
+        .round-image {
+            border-radius: 20%;
+            width: 50%;
+            height: auto;
+        }
+
+        .title {
+            font-size: 2rem; /* Adjust title font size for smaller screens */
+            margin-bottom: 1.5rem; /* Adjust margin for better spacing */
+        }
+    
+        .experience-details-container {
+            flex-direction: column; /* Stack items vertically on smaller screens */
+            align-items: center; /* Center align items horizontally */
+            gap: 1rem; /* Adjust gap for better spacing */
+        }
+    
+        .details-container {
+            flex: 1 1 100%; /* Allow items to take full width */
+            max-width: 100%; /* Ensure items occupy full width */
+        }
+    
+        .project-image {
+            width: 100%; /* Make project images take full width */
+            margin: 0; /* Remove margin for full width images */
+        }
+    
+        .project-title {
+            font-size: 1.2rem; /* Adjust font size for project titles */
+        }
+    
+        .btn-container {
+            flex-direction: column; /* Stack buttons vertically */
+            gap: 0.5rem; /* Reduce gap between buttons */
+        }
+    
+        .project-btn {
+            padding: 0.5rem; /* Adjust padding for smaller buttons */
+            font-size: 0.9rem; /* Adjust font size for smaller screens */
+        }
+}
+
 
 
 

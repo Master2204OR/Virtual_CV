@@ -220,6 +220,47 @@
     }
 }
 
+@media screen and (max-width: 1080px) {
+    /* Adjust padding for the about section */
+    #about {
+        padding: 1.5rem; /* Reduced padding for medium screens */
+    }
+
+    /* Adjust section container styles */
+    .section-container {
+        gap: 1.5rem; /* Reduced space between sections */
+    }
+
+    /* Adjust the container for project details */
+    .experience-details-container {
+        gap: 1.5rem; /* Reduced space between project details */
+    }
+
+    /* Adjust the project containers */
+    .details-container {
+        flex: 1 1 calc(50% - 1.5rem); /* Adjust width and spacing */
+        max-width: calc(50% - 1.5rem);
+    }
+
+    /* Adjust the project images */
+    .project-image {
+        width: 85%; /* Adjust width for medium screens */
+    }
+
+    /* Adjust font sizes for titles and text */
+    .title {
+        font-size: 2rem; /* Smaller font size for medium screens */
+    }
+
+    .section_text_p1 {
+        font-size: 1rem; /* Smaller font size for text */
+    }
+
+    .project-title {
+        font-size: 1.25rem; /* Smaller font size for project titles */
+    }
+}
+
     @media screen and (max-width: 430px) {
         #about {
             padding: 1.5rem; /* Reduced padding */

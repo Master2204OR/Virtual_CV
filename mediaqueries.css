@@ -271,13 +271,6 @@
         font-size: 0.875rem; /* Smaller font size for buttons */
     }
 
-    /* Ensure overall container fit */
-    .section_pic-container {
-        width: 100%; /* Make image containers full width */
-        margin: 1rem 0; /* Add margin for spacing */
-        height: auto;
-        padding: 20px;
-    }
 }
 
 

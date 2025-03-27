@@ -35,6 +35,52 @@
             font-size: 1rem;
         }
     </style>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+
+    .skills-section {
+        max-width: 800px;
+        margin: 50px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .skills-section h2 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .skills-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .skills-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 10px;
+        text-align: center;
+        flex: 1 1 200px;
+    }
+
+    .skills-list li {
+        background-color: #0073e6;
+        color: white;
+        margin: 10px 0;
+        padding: 10px;
+        border-radius: 5px;
+    }
+</style>
     
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7W1KKVGBQ"></script>
@@ -150,7 +196,26 @@
 
     <section id="skills" class="element">
         <div class="skills-content">
-            <h2>Top Skills</h2>
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <ul class="skills-list">
+                    <h3>Technical Skills</h3>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>C#</li>
+                    <li>SQL & Database Management (PostgreSQL, MySQL, NoSQL)</li>
+                    <li>Cloud Computing (Azure)</li>
+                    <li>Machine Learning (TensorFlow)</li>
+                </ul>
+    
+                <ul class="skills-list">
+                    <h3>Transferable Skills</h3>
+                    <li>Communication</li>
+                    <li>Collaboration</li>
+                    <li>Flexibility</li>
+                    <li>Persistence</li>
+                </ul>
+            </div>
         </div>     
     </section>
 

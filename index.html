@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Ntshatsheli Sonele Sodo CV</title>
     <link rel="stylesheet" href="styles.css"> <!--links to external css file-->
     <link rel="stylesheet" href="mediaqueries.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!--Popular icon library that provides scalable vector icons-->
@@ -13,34 +13,6 @@
         google.charts.load("current", {packages:["corechart"]});
         google.charts.setOnLoadCallback(drawChart);
 
-        function drawChart() {
-            var data = google.visualization.arrayToDataTable([
-                ['Skill', 'Percentage', { role: 'style' }],
-                ['C# (Technical Skill)', 80, 'color: blue'],
-                ['Communication (Soft Skill)', 70, 'color: green'],
-                ['Oracle (Technology)', 75, 'color: orange'],
-                ['SQL (Technical Skill)', 65, 'color: blue'],
-                ['Teamwork (Soft Skill)', 100, 'color: green'],
-                ['Azure (Technology)', 60, 'color: orange'],
-            ]);
-
-            var options = {
-                title: '',
-                legend: { position: 'none' },
-                hAxis: {
-                    title: 'Percentage',
-                    minValue: 0,
-                    maxValue: 100
-                },
-                vAxis: {
-                    title: ''
-                },
-                bars: 'horizontal' // Make the bars horizontal
-            };
-
-            var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
-            chart.draw(data, options);
-        }
     </script>
     <style>
         .legend {
